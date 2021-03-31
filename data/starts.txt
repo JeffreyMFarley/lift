@@ -1,0 +1,1 @@
+./pyTagger/pyTagger/__main__.py
