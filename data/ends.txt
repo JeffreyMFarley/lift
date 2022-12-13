@@ -1,4 +1,6 @@
-elasticsearch
-eyed3
-filedialog
-hew
+boto3
+csm_utils
+google.protobuf
+grpc
+invoke
+joblib
