@@ -153,8 +153,8 @@ class ImportsGraph(object):
                 if isinstance(ast_node, ast.Import):
                     for name in ast_node.names:
                         self.add_edge(node, name.name)
-                elif isinstance(ast_node, ast.ImportFrom):
-                    assert ast_node.module
+                elif isinstance(ast_node, ast.ImportFrom) and ast_node.module:
+                    # assert ast_node.module
                     self.add_edge(node, ast_node.module)
 
     def parse_unused(self):
