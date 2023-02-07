@@ -88,7 +88,7 @@ if cfg.output_dot_starts:
         if len(traversal.relations):
             outfile = os.path.join(
                 cfg.output_dot_starts,
-                traversal.initial_node.basename + '.gv'
+                traversal.initial_node.gv_name + '.gv'
             )
             traversal.output_dot(outfile)
             print('{} nodes {} edges'.format(

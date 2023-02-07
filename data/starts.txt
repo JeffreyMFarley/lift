@@ -1,1 +1,15 @@
-./pyTagger/pyTagger/__main__.py
+./csm/medusa/src/manage.py
+./csm/medusa/src/apps/audiences/views.py
+./csm/medusa/src/apps/brands/views.py
+./csm/medusa/src/apps/criteria_info/views.py
+./csm/medusa/src/apps/criteria_options/views.py
+./csm/medusa/src/apps/geographies/views.py
+./csm/medusa/src/apps/inventory_sources/views.py
+./csm/medusa/src/apps/organizations/views.py
+./csm/medusa/src/apps/plans/views.py
+./csm/medusa/src/apps/rate_cards/views.py
+./csm/medusa/src/apps/rate_requests/views.py
+./csm/medusa/src/apps/scenarios/views.py
+./csm/medusa/src/apps/tv_plans/views.py
+./csm/medusa/src/apps/tv_schedules/views.py
+./csm/medusa/src/apps/users/views.py

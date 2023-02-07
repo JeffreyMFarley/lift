@@ -85,15 +85,15 @@ class Traversal(object):
                     output_sg(f, csg, d + 1, sg.label)
                 for n in sg.nodes:
                     if n in self.roots:
-                        print('{}\t{} [style=filled fillcolor=gold]'.format(
-                            tabs, n.gv_name), file=f
+                        print('{}\t{} [label="{}" style=filled fillcolor=gold]'.format(
+                            tabs, n.gv_name, n.basename), file=f
                         )
                     elif n in self.options.highlights:
-                        print('{}\t{} [style=filled fillcolor=skyblue1]'.format(
-                            tabs, n.gv_name), file=f
+                        print('{}\t{} [label="{}" style=filled fillcolor=skyblue1]'.format(
+                            tabs, n.gv_name, n.basename), file=f
                         )
                     else:
-                        print('{}\t{}'.format(tabs, n.gv_name), file=f)
+                        print('{}\t{} [label="{}"]'.format(tabs, n.gv_name, n.basename), file=f)
                 print('{}}}\n'.format(tabs), file=f)
 
             visited_sg.add(sg)

@@ -41,8 +41,8 @@ class File(object):
     @property
     def gv_name(self):
         '''A name that is safe for graphviz output'''
-        x = self.basename
-        return x.replace('-', '_').replace('.', '_')
+        x = self.full_path
+        return x.replace('-', '_').replace('.', '_').replace('/', '')
 
     @property
     def dotted_path(self):
