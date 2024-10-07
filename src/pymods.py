@@ -175,6 +175,7 @@ PYMODS = (
     'types',
     'typing',
     'unicodedata',
+    'unittest'
     'urllib',
     'urllib.error',
     'urllib.parse',
