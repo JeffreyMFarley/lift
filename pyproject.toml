@@ -5,7 +5,7 @@ description = "Lift contains custom tools to analyze python code."
 authors = ["JeffreyMFarley <jeffrey.m.farley@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "__main__.py"}] 
+packages = [{include = "**/*.py"}] 
 
 [tool.poetry.dependencies]
 python = "^3.11"
