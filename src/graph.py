@@ -163,14 +163,15 @@ class ImportsGraph(object):
         with io.open(self.options.exclude_unused, 'r') as f:
             for line in f:
                 tokens = line.strip().split(' ')
-                assert(tokens[1] == 'W0611')
+                assert tokens[1] == 'W0611:', f'Expected W0611, got {tokens=}'
 
                 # dcm-intuition/integration/broker/order_service.py:8:1:
                 a = './' + tokens[0].split(':')[0]
 
                 # 'broker.flextrade.business_operation.BusinessOperation'
-                b = tokens[2].strip("'")
+                b = tokens[-2].strip("'")
 
+                print('unused', a, b)
                 unused.add((a, b))
 
         return unused
