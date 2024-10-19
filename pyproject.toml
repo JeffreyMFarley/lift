@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "lift"
+version = "1.0.0"
+description = "Lift contains custom tools to analyze python code."
+authors = ["JeffreyMFarley <jeffrey.m.farley@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "__main__.py"}] 
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ConfigArgParse = "^1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
